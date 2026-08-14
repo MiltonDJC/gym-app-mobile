@@ -1,3 +1,3 @@
 # gym_app_mobile
 
-A new Flutter project.
+A mobile app for the gym
