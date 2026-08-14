@@ -1,6 +1,6 @@
 name: gym_app_mobile
-description: "A new Flutter project."
-publish_to: 'none'
+description: "A mobile app for the gym."
+publish_to: "none"
 version: 0.1.0+1
 
 environment:
