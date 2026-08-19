@@ -53,4 +53,4 @@ app.*.map.json
 !.env.example
 
 # Local backend
-backend
+backend/
