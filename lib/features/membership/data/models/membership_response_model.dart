@@ -2,11 +2,11 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:gym_app_mobile/features/membership/domain/entities/membership_response_entity.dart';
 import 'package:gym_app_mobile/features/membership/domain/enums/membership_period.dart';
 import 'package:gym_app_mobile/features/membership/domain/enums/membership_status.dart';
-part 'membership_model.freezed.dart';
-part 'membership_model.g.dart';
+part 'membership_response_model.freezed.dart';
+part 'membership_response_model.g.dart';
 
 @freezed
-abstract class MembershipResponseModel with _$MembershipModel {
+abstract class MembershipResponseModel with _$MembershipResponseModel {
   const MembershipResponseModel._();
 
   const factory MembershipResponseModel({
@@ -22,7 +22,7 @@ abstract class MembershipResponseModel with _$MembershipModel {
   }) = _MembershipModel;
 
   factory MembershipResponseModel.fromJson(Map<String, Object?> json) =>
-      _$MembershipModelFromJson(json);
+      _$MembershipResponseModelFromJson(json);
 
   factory MembershipResponseModel.fromEntity(MembershipResponseEntity entity) =>
       MembershipResponseModel(
