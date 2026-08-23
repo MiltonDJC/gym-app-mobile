@@ -12,7 +12,7 @@ abstract class UserCreateModel with _$UserCreateModel {
     @JsonKey(name: 'last_name') required String lastName,
     @JsonKey(name: 'phone') String? phone,
     @Default(UserRole.student) @JsonKey(name: 'role') UserRole role,
-  }) = _UserResponseModel;
+  }) = _UserCreateModel;
 
   factory UserCreateModel.fromJson(Map<String, Object?> json) =>
       _$UserCreateModelFromJson(json);
