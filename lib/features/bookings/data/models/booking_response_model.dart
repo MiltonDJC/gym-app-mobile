@@ -9,7 +9,7 @@ abstract class BookingResponseModel with _$BookingResponseModel {
   const BookingResponseModel._();
 
   const factory BookingResponseModel({
-    required String id,
+    @JsonKey(name: 'id') required String id,
     @JsonKey(name: 'tenant_id') required String tenantId,
     @JsonKey(name: 'class_id') required String classId,
     @JsonKey(name: 'student_id') String? studentId,
