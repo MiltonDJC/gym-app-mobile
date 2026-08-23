@@ -1,5 +1,5 @@
-class AttendanceEntity {
-  AttendanceEntity({
+class AttendanceResponseEntity {
+  AttendanceResponseEntity({
     required this.id,
     required this.tenantId,
     required this.userId,
