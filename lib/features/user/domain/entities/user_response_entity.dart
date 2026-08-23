@@ -1,7 +1,7 @@
 import 'package:gym_app_mobile/features/user/domain/enums/user_role.dart';
 
-class UserEntity {
-  const UserEntity({
+class UserResponseEntity {
+  const UserResponseEntity({
     required this.id,
     required this.tenantId,
     required this.email,
