@@ -10,15 +10,15 @@ abstract class MembershipResponseModel with _$MembershipResponseModel {
   const MembershipResponseModel._();
 
   const factory MembershipResponseModel({
-    required String id,
-    required String tenantId,
-    required String userId,
-    required String planName,
-    required MembershipPeriod period,
-    required MembershipStatus status,
-    required DateTime startDate,
-    required DateTime endDate,
-    required double price,
+    @JsonKey(name: 'id') required String id,
+    @JsonKey(name: 'tenant_id') required String tenantId,
+    @JsonKey(name: 'user_id') required String userId,
+    @JsonKey(name: 'plan_name') required String planName,
+    @JsonKey(name: 'period') required MembershipPeriod period,
+    @JsonKey(name: 'status') required MembershipStatus status,
+    @JsonKey(name: 'start_date') required DateTime startDate,
+    @JsonKey(name: 'end_date') required DateTime endDate,
+    @JsonKey(name: 'price') required double price,
   }) = _MembershipModel;
 
   factory MembershipResponseModel.fromJson(Map<String, Object?> json) =>
