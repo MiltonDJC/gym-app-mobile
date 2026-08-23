@@ -1,8 +1,8 @@
 import 'package:gym_app_mobile/features/membership/domain/enums/membership_period.dart';
 import 'package:gym_app_mobile/features/membership/domain/enums/membership_status.dart';
 
-class MembershipEntity {
-  MembershipEntity({
+class MembershipResponseEntity {
+  MembershipResponseEntity({
     required this.id,
     required this.tenantId,
     required this.userId,
