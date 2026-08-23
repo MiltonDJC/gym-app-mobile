@@ -1,11 +1,11 @@
 import 'package:gym_app_mobile/features/bookings/domain/enums/booking_status.dart';
 
-class BookingEntity {
-  BookingEntity({
+class BookingResponseEntity {
+  BookingResponseEntity({
     required this.id,
     required this.tenantId,
     required this.classId,
-    required this.studentId,
+    this.studentId,
     required this.status,
     required this.bookedAt,
   });
@@ -13,7 +13,7 @@ class BookingEntity {
   final String id;
   final String tenantId;
   final String classId;
-  final String studentId;
+  final String? studentId;
   final BookingStatus status;
   final DateTime bookedAt;
 }
