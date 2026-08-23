@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:gym_app_mobile/features/user/domain/entities/user_entity.dart';
+import 'package:gym_app_mobile/features/user/domain/entities/user_response_entity.dart';
 import 'package:gym_app_mobile/features/user/domain/enums/user_role.dart';
 part 'user_response_model.freezed.dart';
 part 'user_response_model.g.dart';
@@ -23,19 +23,20 @@ abstract class UserResponseModel with _$UserResponseModel {
   factory UserResponseModel.fromJson(Map<String, Object?> json) =>
       _$UserResponseModelFromJson(json);
 
-  factory UserResponseModel.fromEntity(UserEntity entity) => UserResponseModel(
-    id: entity.id,
-    tenantId: entity.tenantId,
-    email: entity.email,
-    role: entity.role,
-    firstName: entity.firstName,
-    lastName: entity.lastName,
-    phone: entity.phone,
-    isActive: entity.isActive,
-    createdAt: entity.createdAt,
-  );
+  factory UserResponseModel.fromEntity(UserResponseEntity entity) =>
+      UserResponseModel(
+        id: entity.id,
+        tenantId: entity.tenantId,
+        email: entity.email,
+        role: entity.role,
+        firstName: entity.firstName,
+        lastName: entity.lastName,
+        phone: entity.phone,
+        isActive: entity.isActive,
+        createdAt: entity.createdAt,
+      );
 
-  UserEntity toEntity() => UserEntity(
+  UserResponseEntity toEntity() => UserResponseEntity(
     id: id,
     tenantId: tenantId,
     email: email,
