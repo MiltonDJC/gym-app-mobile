@@ -1,5 +1,5 @@
-class ClassEntity {
-  const ClassEntity({
+class ClassResponseEntity {
+  const ClassResponseEntity({
     required this.id,
     required this.tenantId,
     required this.name,
