@@ -60,3 +60,6 @@ backend/
 
 # Json serializable files
 *.g.dart
+
+# Other files to ignore
+todo.txt
